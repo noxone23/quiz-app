@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/*Es verhindert, dass Layouts zerschossen werden, wenn man Abstände hinzufügt.*/
 
 body {
   margin: 0;
@@ -139,3 +140,9 @@ h2 {
   background-color: rgb(208, 242, 252);
   border-radius: 8px;
 }
+
+html {
+  overflow-y: scroll;
+}
+/* Erzwingt eine Scrollleiste permanent, egal wie viel Inhalt da ist, 
+damit sich die verfügbare Breite nie ändert */
