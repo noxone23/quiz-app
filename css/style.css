@@ -1,4 +1,6 @@
 @import url("profile.css");
+@import url("darkmode.css");
+@import url("form.css");
 
 * {
   box-sizing: border-box;
@@ -38,7 +40,7 @@ main {
 
 .QuestionCard {
   position: relative;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -143,8 +145,14 @@ h2 {
   border-radius: 8px;
 }
 
+/* Erzwingt eine Scrollleiste permanent, egal wie viel Inhalt da ist, 
+damit sich die verfügbare Breite nie ändert */
 html {
   overflow-y: scroll;
 }
-/* Erzwingt eine Scrollleiste permanent, egal wie viel Inhalt da ist, 
-damit sich die verfügbare Breite nie ändert */
+
+.hidden {
+  display: none;
+}
+
+

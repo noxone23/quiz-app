@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="./js/darkmode.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
@@ -12,8 +14,8 @@
     </header>
     <main class="profile">
       <div class="profile__header">
-        <img src="./assets/user.svg" alt="" class="profile__avatar" />
-        <h2>Max Doe</h2>
+        <img src="./assets/avatar.jpg" alt="" class="profile__avatar" />
+        <h2>Jensen Doe</h2>
       </div>
       <section class="profile__about">
         <h3>About me</h3>
@@ -28,11 +30,12 @@
       <div class="profile__stats">
         <div class="profile__stat">
           <img src="./assets/question.png" alt="" />
+          <img src="./assets/alert.png" alt="" />
           6
         </div>
 
         <div class="profile__stat">
-          <img src="./assets/bookmarkneu.png" alt="" />
+          <img src="./assets/bookmarkblack.png" alt="" />
           3
         </div>
       </div>
@@ -41,7 +44,7 @@
         <div class="profile__setting-row">
           <span>Dark Mode</span>
           <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" data-js="dark-mode-toggle" />
             <span class="switch__slider"></span>
           </label>
         </div>
@@ -63,6 +66,11 @@
           <li>
             <a href="profile.html" class="active">
               <img src="./assets/user.svg" alt="profile" />
+            </a>
+          </li>
+            <li>
+            <a href="form.html">
+              <img src="./assets/add.png" alt="add question" />
             </a>
           </li>
         </ul>

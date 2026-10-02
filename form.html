@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="./js/darkmode.js" defer></script>
+    <script src="./js/form.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+    
+      <form data-js="card-form">
+        
+        <fieldset>
+            <label for="question">Your question:</label>
+            <textarea
+                id="question"
+                name="question"
+                placeholder="type your question here..."
+                data-js="question-input"
+                maxlength="150"
+                required
+            ></textarea>
+
+            <p data-js="question-counter" class="counter-text">150 characters left</p>
+
+            <label for="answer">Your answer:</label>
+            <textarea
+                id="answer"
+                name="answer"
+                placeholder="type your answer here..."
+                data-js="answer-input"
+                maxlength="150"
+                required
+            ></textarea>
+
+            <p data-js="answer-counter" class="counter-text">150 characters left</p>
+
+            <label for="tag">Tag</label>
+            <input
+                type="text"
+                id="tag"
+                name="tag"
+                placeholder="like marvel, heroes..."
+                data-js="tag-input"
+                required
+            />
+            <button type="submit" class="submit-button">Submit</button>
+        </fieldset>
+      
+     </form>
+
+            <div data-js="card-container"></div>
+
+    </main>
+    <footer>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="./assets/house.svg" alt="home" />
+            </a>
+          </li>
+          <li>
+            <a href="bookmarks.html">
+              <img src="./assets/bookmark.svg" alt="bookmark" />
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <img src="./assets/user.svg" alt="profile" />
+            </a>
+          </li>
+           <li>
+            <a href="form.html" class="active">
+              <img src="./assets/add.png" alt="add question" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

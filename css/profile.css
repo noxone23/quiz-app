@@ -14,12 +14,14 @@
 }
 
 .profile__avatar {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  object-fit: cover;
   border: 2px solid black;
   padding: 12px;
   margin: 20px;
+  background-color: rgb(208, 242, 252);
 }
 
 .profile__about h3,
@@ -29,11 +31,17 @@
 }
 
 .profile__about p {
-  border: 1px solid grey;
+  border: 1px solid black;
   border-radius: 8px;
   padding: 15px;
   min-height: 60px;
   margin: 0;
+  background-color: rgb(208, 242, 252);
+}
+
+/*wenn Darkmode dann about me text Lila*/
+html[data-theme="dark"] .profile__about p {
+  color: rgb(144, 122, 243);
 }
 
 .profile__stats {
@@ -49,12 +57,18 @@
   border: 1px solid black;
   border-radius: 12px;
   padding: 8px 16px;
-  font-size: 1.1rem;
+  font-size: 17px;
+  background-color: rgb(144, 122, 243);
 }
 
 .profile__stat img {
 width: 26px;
 height: 26px;
+object-fit: contain;
+}
+
+.profile__stat img[src*="question"] {
+  margin-right: -18px; 
 }
 
 .profile__setting-row {
